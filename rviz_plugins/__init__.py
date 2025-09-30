@@ -1,0 +1,1 @@
+# RViz Plugins for enkaz_rescue package

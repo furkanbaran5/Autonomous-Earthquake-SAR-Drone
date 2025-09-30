@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library path="scripts">
+  <class name="BuildingDetectorGUI" type="building_detector_gui.BuildingDetectorGUI" base_class_type="rqt_gui_py::Plugin">
+    <description>
+      A GUI plugin for controlling and monitoring the building detector system.
+      Provides real-time visualization of detection results and system controls.
+    </description>
+    <qtgui>
+      <group>
+        <label>Enkaz Rescue</label>
+        <icon type="theme">applications-system</icon>
+        <statustip>Enkaz Rescue System Tools</statustip>
+      </group>
+      <label>Building Detector</label>
+      <icon type="theme">camera-web</icon>
+      <statustip>Building Detection Control Panel</statustip>
+    </qtgui>
+  </class>
+
+  <class name="TrajectoryControl" type="firefly_control.trajectory_control_plugin.TrajectoryControlPlugin" base_class_type="rqt_gui_py::Plugin">
+    <description>
+      A control panel for drone trajectory recording, playback and rescue operations.
+      Provides timeline controls and human detection system integration.
+    </description>
+    <qtgui>
+      <group>
+        <label>Enkaz Rescue</label>
+        <icon type="theme">applications-system</icon>
+        <statustip>Enkaz Rescue System Tools</statustip>
+      </group>
+      <label>Trajectory Control</label>
+      <icon type="theme">applications-multimedia</icon>
+      <statustip>Drone Trajectory and Rescue Control Panel</statustip>
+    </qtgui>
+  </class>
+</library>

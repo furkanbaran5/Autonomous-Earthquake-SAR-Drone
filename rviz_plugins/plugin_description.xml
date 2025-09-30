@@ -1,0 +1,9 @@
+<library path="src">
+  <class name="firefly_control/TrajectoryPanel"
+         type="firefly_control.rviz_plugins.trajectory_panel.TrajectoryRVizPanel"
+         base_class_type="rviz::Panel">
+    <description>
+      Trajectory Playback and Rescue Control Panel for RViz
+    </description>
+  </class>
+</library>
