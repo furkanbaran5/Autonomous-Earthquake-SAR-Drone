@@ -147,7 +147,7 @@ This project was developed during my internship at **Yıldız Technical Universi
 **Furkan Baran**  
 - Computer Engineering Student, Yıldız Technical University  
 - Email: `furkanbarann5@gmail.com`  
-- Instagram: [@furkanbaran5](https://instagram.com/furkanbaran5)
+- Linkedin: [@furkanbaran5](https://www.linkedin.com/in/furkanbaran5/)
 
 ---
 
