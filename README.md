@@ -12,8 +12,6 @@ This project focuses on developing an **autonomous drone system** for **Search a
   - **3D mapping** using **OctoMap** and costmap-based navigation.  
   - **Path planning** with the **A\*** algorithm and trajectory-based following.  
   - **Finite State Machine (FSM)** for mission flow control.  
-  - **Depth camera integration** for improved localization and mapping.  
-  - **Gazebo simulation** for testing earthquake-like scenarios and algorithm validation.
 
 ---
 
@@ -26,21 +24,6 @@ This project focuses on developing an **autonomous drone system** for **Search a
 - **A\*** — path planning  
 - **FSM (Finite State Machine)** — mission/state control  
 - **Python & C++** — ROS nodes and algorithms  
-- Optional: Depth camera drivers (e.g. Intel RealSense / ASUS), OpenCV, TensorRT (for YOLO acceleration)
-
----
-
-## 📂 Project Structure
-
-Autonomous-Earthquake-SAR-Drone/  
-├── src/                 # ROS packages and nodes (navigation, detection, mapping, fsm)  
-├── launch/              # ROS launch files (simulation, detection, mapping)  
-├── models/              # Gazebo models (collapsed building, drone model)  
-├── scripts/             # Helper Python scripts / tools  
-├── config/              # Parameters: costmap, octomap, planner, yolo config  
-├── docs/                # Diagrams, reports, internship diary excerpts  
-├── assets/              # Placeholder for images/screenshots (add your images here)  
-└── README.md            # This file
 
 ---
 
@@ -51,23 +34,33 @@ Autonomous-Earthquake-SAR-Drone/
 - **Costmap & Path Planning**: Custom costmap with inflation layers + A* and trajectory following for safe navigation.  
 - **Frontier-based / Heuristic Exploration**: Discover unknown regions and generate exploration targets.  
 - **Finite State Machine (FSM)**: Mission states (e.g., TAKEOFF → SURVEY → BUILDING_DETECT → EXPLORE → HUMAN_DETECT → REPORT → RETURN).  
-- **Depth Camera Integration**: Better distance estimates and obstacle awareness inside structures.  
-- **Gazebo Test Scenarios**: Simulated collapsed buildings, varied lighting, and clutter for robustness testing.
 
 ---
 
-## 📷 Example Visuals (add these images to `assets/` and reference them)
+## 📷 Example Visuals
 
-> Replace the placeholders in the repository with your screenshots (assets/*). Example filenames suggested below.
+Below are some example visuals from the project (all located in `assets/`):
 
-- `assets/gazebo_simulation.png` — Gazebo: drone exploring a collapsed building  
-- `assets/yolo_detection.png` — YOLO: bounding boxes on detected humans  
-- `assets/octomap_visual.png` — OctoMap / 3D map screenshot (rviz)  
-- `assets/fsm_diagram.png` — FSM state diagram (SVG/PNG)  
-- `assets/path_planning.png` — Planned trajectory overlay on map
+- **Build Environment (Gazebo World)**  
+![Build Environment](assets/build.jpg)
 
-You can add them to the README like this (after uploading):  
-`![Gazebo Simulation](assets/gazebo_simulation.png)`
+- **Human Detection (YOLO) - Case 1**  
+![Human Detection](assets/detect_human.jpg)
+
+- **Human Detection (YOLO) - Case 2**  
+![Human Detection 2](assets/detect_human2.jpg)
+
+- **Environment Exploration**  
+![Environment](assets/enviroment.jpg)
+
+- **GUI Interface**  
+![GUI](assets/gui.jpg)
+
+- **Mapping and Planning (Scenario 1)**  
+![Mapping and Planning](assets/mappingandplanning.jpg)
+
+- **Mapping and Planning (Scenario 2)**  
+![Mapping and Planning 2](assets/mapping_planning.jpg)
 
 ---
 
